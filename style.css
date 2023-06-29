@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    font-family: 'Roboto', sans-serif;
+    --heading-color: #78350f;
+    box-sizing: border-box;
+    --card-color: rgba(84, 35, 1, 0.5);
+} 
+
+body{
+    background-color: beige;
+}
+.main{
+    height: 95vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    width: 90vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header #title{
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.container{
+    margin: 20px 0;
+    width: 90vw;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+    align-items: start;
+    justify-items: start;
+}
+
+
+.footer{
+    display: flex;
+    gap: 50px;
+}
+
+
+.footer button{
+    border: none;
+    border-radius: 20px;
+    background-color: #78350f;
+    color: white;
+    width: 140px;
+    height: 50px;
+}
+
+#newBookForm{
+    padding: 50px 30px;
+    height: 40vh;
+    width: 30vw;
+    border: 1px solid var(--heading-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--heading-color);
+
+}
+
+button, input{
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+input{
+    border: 1px solid var(--heading-color);
+    border-radius: 5px;
+}
+/*
+input[type="radio"]{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}*/
+
+ul{
+    list-style: none;
+}
+
+fieldset{
+    border: none;
+    margin-left: -15px;
+}
+
+#removeBook{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    background-color: var(--heading-color);
+    color: beige;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#readBookUpdate{
+    color: beige;
+    background-color: var(--heading-color);
+    text-align: center;
+    border: none;
+    border-radius: 14px;
+    width: 80px;
+    height: 36px;
+}
+
+#buttonDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#buttonDiv #newBookButton{
+    padding: 10px;
+    height: 40px;
+    width: 140px;
+    background-color: var(--heading-color);
+    color: beige;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#readBook ul{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
