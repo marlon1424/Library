@@ -7,11 +7,13 @@ const authorInput = document.getElementById("authorInput");
 const numPageInput = document.getElementById("numPageInput");
 const readStatusInputYes = document.querySelector('input[type="radio"]#isRead');
 
-function Book(title, author, numPages, read) {
-    this.title = title,
-    this.author = author,
-    this.numPages = numPages,
-    this.read = read
+class Book{
+    constructor(title, author, numPages, read){
+        this.title = title,
+        this.author = author,
+        this.numPages = numPages,
+        this.read = read
+    }
 }
 
 let myLibrary = [];
@@ -32,7 +34,6 @@ function displayNewBook(card){
 
     title.setAttribute('style', 'font-size: 150%; font-weight: bolder; display: flex; justify-content: center; margin-bottom: 10px;');
 
-    libraryCard.classList.add(".card");
 
     libraryCard.appendChild(title);
     libraryCard.appendChild(author);
@@ -120,7 +121,4 @@ newBookForm.addEventListener('submit', (event) => {
 
 
 });
-
-
-
 
